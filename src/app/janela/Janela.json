@@ -1,0 +1,177 @@
+{
+      "janela":{
+         "codigo":"6970596d-6a87-4296-b6aa-b1579ce10830",
+         "descricao":"Janela",
+         "buttons":
+            {
+               "crud":[
+                  {
+                     "codigo":"b1579ce10830",
+                     "name": "save",
+                     "evento":"save",
+                     "icon": "bi bi-plus-lg"
+                  },
+                  {
+                     "codigo":"b1579ceddd30",
+                     "name": "new",
+                     "icon": "bi bi-save"
+                  },
+                  {
+                     "codigo":"b1sssse10830",
+                     "name": "alter",
+                     "icon": "bi bi-wrench"
+                  },
+                  {
+                     "codigo":"bgecsse10830",
+                     "name": "delete",
+                     "icon": "bi bi-trash3"
+                  },
+                  {
+                     "codigo":"ffffxsddcdvvd",
+                     "name": "cancel",
+                     "icon": "bi bi-x-lg"
+                  },
+                  {
+                     "codigo":"uuygdddgtgt",
+                     "name": "json",
+                     "icon": "bi bi-window-plus",
+                     "action":""
+                  },
+                  {
+                     "codigo":"uuygugutgtgt",
+                     "name": "json",
+                     "icon": "bi bi-filetype-json"
+                  }
+               ]
+            }  
+         ,
+         "quadro":[
+            {
+               "name":"Identificação",
+               "type":"block",
+               "id":"jnjwkxnwkjxnjkwnjqnxjkwnk",
+               "Identificador":"JanelaHeader",
+               "campo":[
+                  {
+                     "id":"00915b10-e991-4164-8932-57c9aadca2e1",
+                     "descricao":"código",
+                     "type":"text",
+                     "maxlength":36,
+                     "max":36,
+                     "min":36,
+                     "required":1,
+                     "Acessibilidade":1,
+                     "RegraNecogio":"",
+                     "chave":"codigo",
+                     "value":"40b489d6-8a69-4d4b-9c16-cc251cbc6480",
+                     "inJson":"true"
+                  },
+                  {
+                     "id":"7ec2b914-8a62-4296-bf59-023406111441",
+                     "descricao":"Nome",
+                     "type":"text",
+                     "maxlength":15,
+                     "max":0,
+                     "min":0,
+                     "required":1,
+                     "Acessibilidade":1,
+                     "RegraNecogio":"",
+                     "chave":"nome",
+                     "value":"Pontos de entradas",
+                     "inJson":"true"
+                  },
+                  {
+                     "id":"20280273-df01-4205-a454-419c8e89cfd0",
+                     "descricao":"Descricao",
+                     "type":"text",
+                     "maxlength":50,
+                     "max":0,
+                     "min":0,
+                     "required":1,
+                     "Acessibilidade":1,
+                     "RegraNecogio":"",
+                     "chave":"unidade",
+                     "value":"Pontos de entradas API's",
+                     "inJson":"true"
+                  }
+               ]
+            },
+            {
+               "name":"Header",
+               "type":"block",
+               "id":"kjkwjvjkvwvjwvbw",
+               "Identificador":"JanelaDetail",
+               "campo":[
+                  {
+                     "id":"7ec2b914-8a62-4296-bf59-0ddd06111441",
+                     "descricao":"código",
+                     "type":"text",
+                     "maxlength":36,
+                     "max":36,
+                     "min":36,
+                     "required":1,
+                     "Acessibilidade":1,
+                     "RegraNecogio":"",
+                     "EventListner":[
+                        
+                     ],
+                     "chave":"unidade",
+                     "value":"7ec2b914-8a62-4296-bf59-023406111441",
+                     "inJson":"true"
+                  },
+                  {
+                     "id":"20280273-df01-4205-a454-4ss9c8e89cfd0",
+                     "descricao":"Descricao",
+                     "type":"text",
+                     "maxlength":50,
+                     "max":0,
+                     "min":0,
+                     "required":1,
+                     "Acessibilidade":1,
+                     "RegraNecogio":"",
+                     "EventListner":[
+                        
+                     ],
+                     "chave":"unidade",
+                     "value":"API foguete X",
+                     "inJson":"true"
+                  },
+                  {
+                     "id":"20280273-df01-4205-a454-4swe8e89cfd0",
+                     "descricao":"Ambiente",
+                     "type":"text",
+                     "maxlength":15,
+                     "max":0,
+                     "min":0,
+                     "required":1,
+                     "Acessibilidade":1,
+                     "RegraNecogio":"",
+                     "EventListner":[
+                        
+                     ],
+                     "chave":"",
+                     "value":"Desenvolvimento",
+                     "inJson":"true"
+                  },
+                  {
+                     "id":"20280273-df01-oo05-a454-4swe8e89cfd0",
+                     "descricao":"Ponto de Entrada",
+                     "type":"text",
+                     "maxlength":25,
+                     "max":0,
+                     "min":0,
+                     "required":1,
+                     "Acessibilidade":1,
+                     "RegraNecogio":"",
+                     "EventListner":[
+                        
+                     ],
+                     "chave":"",
+                     "value":"http://localhost:4200/",
+                     "inJson":"true"
+                  }
+               ]
+            }
+         ]
+      }
+   }

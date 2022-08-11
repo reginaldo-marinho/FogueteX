@@ -1,0 +1,20 @@
+.quadro-campo{
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid var(--b-cinza);
+      margin-right: 25px;
+      border-radius: 3px;
+}
+.campo{
+      margin: 5px;
+}
+.campo > span,.campo > input{
+      display: block;
+}
+.campo > input{
+      padding: 0;
+      border: 1px solid var(--b-cinza);
+}
+.campo > input:focus{
+      border-bottom: 2px solid #286ad3;
+}

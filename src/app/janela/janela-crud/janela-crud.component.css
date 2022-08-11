@@ -1,0 +1,21 @@
+.janela,.janela-grid,.janela-grupo,.conteiner-action{
+      height: calc(100% - 50px);
+
+}
+.janela{
+      display: flex;
+      max-width: 100vw !important;
+}
+.janela-grid{
+      width: auto;
+}
+.janela-base{
+      width: 100%; 
+      border-left: 1px solid var(--b-cinza);
+      border-right: 1px solid var(--b-cinza);
+}
+
+.janela-titulo{
+      margin-top: 10px;
+      margin-left: 10px;
+}

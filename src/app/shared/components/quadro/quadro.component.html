@@ -1,0 +1,4 @@
+<div class="janela-quadro" *ngFor="let quadro of Quadro" [id]="quadro.id">
+      <h6>{{quadro.name}}</h6> 
+      <campo-innput [Campos]="quadro.campo"></campo-innput>
+</div>

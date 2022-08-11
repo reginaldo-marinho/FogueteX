@@ -1,0 +1,7 @@
+
+<div class="quadro-campo">
+      <div class="campo" *ngFor="let campo of Campos">
+            <span class="campo-descricao">{{campo.descricao}} <span style="color: red;" *ngIf="campo.required > 0">*</span></span>
+            <input autocomplete="off" [id]="campo.id" type="text" [inputDirective]="campo" [value]="campo.value">
+      </div>
+</div>

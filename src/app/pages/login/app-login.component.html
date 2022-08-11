@@ -1,0 +1,24 @@
+<div class="vw-100 vh-100 border d-flex justify-content-center align-items-center" >
+      <div [formGroup]="Formlogin" class="border rounded shadow-lg p-3 mb-5" >
+            <div class="d-flex justify-content-center">
+                  <img src="assets\foguete-login.png" alt="" class="mb-3 w-50">
+            </div>
+            <div class="mb-1">
+                  <label for="username">Nome</label>
+                  <div class="col-sm-20">
+                        <input type="text" class="form-control" id="username"  formControlName="username">
+                  </div>
+            </div>
+            <div class="mb-1">
+                  <label for="password">senha</label>
+                  <div class="col-sm-20">
+                        <input type="password" class="form-control" id="password" formControlName="password">
+                  </div>
+            </div>
+            <button id="btn-entrar" type="button" class="mt-2 mr-2 btn btn-primary">Entrar</button>
+      </div>
+</div>
+
+
+
+     
