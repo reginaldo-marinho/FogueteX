@@ -2,7 +2,7 @@ import { Component,OnInit, Type} from '@angular/core';
 import {JanelaService } from 'src/app/core/services/janela.service';
 import { IJanela, IQuadro } from '../janela';
 
- 
+
 @Component({
   templateUrl: './janela-crud.component.html',
   styleUrls: ['./janela-crud.component.css'],
@@ -11,7 +11,7 @@ import { IJanela, IQuadro } from '../janela';
 export class JanelaCrudComponent implements OnInit{
 
   constructor(private JS:JanelaService) { }
-  
+
   ngOnInit(){ 
     this.EstruturaJanela_ = this.JS.Janela
     this.PreparaModelo();
