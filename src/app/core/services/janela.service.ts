@@ -8,5 +8,4 @@ import {default as JanelaJSON} from  'src/app/janela/Janela.json';
 export class JanelaService {
       constructor() { }
       public Janela:IJanela = JSON.parse(JSON.stringify(JanelaJSON.janela)) as IJanela;
-      public ModeloJanela!:any;
 }
