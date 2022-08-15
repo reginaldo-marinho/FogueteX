@@ -3,47 +3,56 @@
          "codigo":"6970596d-6a87-4296-b6aa-b1579ce10830",
          "descricao":"Janela",
          "buttons":
-            {
-               "crud":[
-                  {
-                     "codigo":"b1579ce10830",
-                     "name": "save",
-                     "evento":"save",
-                     "icon": "bi bi-plus-lg"
-                  },
-                  {
-                     "codigo":"b1579ceddd30",
-                     "name": "new",
-                     "icon": "bi bi-save"
-                  },
-                  {
-                     "codigo":"b1sssse10830",
-                     "name": "alter",
-                     "icon": "bi bi-wrench"
-                  },
-                  {
-                     "codigo":"bgecsse10830",
-                     "name": "delete",
-                     "icon": "bi bi-trash3"
-                  },
-                  {
-                     "codigo":"ffffxsddcdvvd",
-                     "name": "cancel",
-                     "icon": "bi bi-x-lg"
-                  },
-                  {
-                     "codigo":"uuygdddgtgt",
-                     "name": "json",
-                     "icon": "bi bi-window-plus",
-                     "action":""
-                  },
-                  {
-                     "codigo":"uuygugutgtgt",
-                     "name": "json",
-                     "icon": "bi bi-filetype-json"
-                  }
-               ]
-            }  
+            [
+               {
+                  "codigo":"b1579ce10830",
+                  "name": "new",
+                  "evento":"new",
+                  "icon": "bi bi-plus-lg",
+                  "tipoBotao":"janela",
+                  "descricao":"novo"
+               },
+               {
+                  "codigo":"b1579ceddd30",
+                  "name": "save",
+                  "evento":"save",
+                  "icon": "bi bi-save",
+                  "tipoBotao":"crud",
+                  "descricao":"salvar"
+               },
+               {
+                  "codigo":"b1sssse10830",
+                  "name": "alter",
+                  "evento":"alter",
+                  "icon": "bi bi-wrench",
+                  "tipoBotao":"crud",
+                  "descricao":"Alterar"
+               },
+               {
+                  "codigo":"bgecsse10830",
+                  "name": "delete",
+                  "evento":"delete",
+                  "icon": "bi bi-trash3",
+                  "tipoBotao":"crud",
+                  "descricao":"excluir"
+               },
+               {
+                  "codigo":"ffffxsddcdvvd",
+                  "name": "cancel",
+                  "evento":"cancel",
+                  "icon": "bi bi-x-lg",
+                  "tipoBotao":"janela",
+                  "descricao":"cancelar"
+               },
+               {
+                  "codigo":"uuygugutgtgt",
+                  "name": "json",
+                  "evento":"im   portJson",
+                  "icon": "bi bi-filetype-json",
+                  "tipoBotao":"especifico",
+                  "descricao":"Importar modelo JSON"
+               }
+            ]  
          ,
          "quadro":[
             {
