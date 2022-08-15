@@ -19,7 +19,9 @@ export class JanelaCrudComponent implements OnInit{
   EstruturaJanela_!:IJanela;
   Modelo!:JSON;
   PreparaModelo(){
-    this.Modelo = this.model.PreparaModelo((this.JS.Janela as IJanela));
+
+    this.model.Setmodelo = this.JS.Janela as IJanela;
+    this.Modelo = this.model.GetModelo;
   }
 
 }

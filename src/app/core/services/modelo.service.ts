@@ -5,8 +5,16 @@ import { ICampo, IJanela, IQuadro } from 'src/app/janela/janela';
 export class ModeloService {
     constructor() { }
 
-    Modelo!:string;
-    PreparaModelo(Janela:IJanela):JSON{
+    private Modelo!:string;
+    
+    set Setmodelo(Janela:IJanela){
+        this.Modelo = this.PreparaModelo(Janela);
+    }
+    get GetModelo():JSON{
+        return JSON.parse(this.Modelo)
+    }
+    
+    private PreparaModelo(Janela:IJanela):string{
         this.Modelo = '';
         try
         {
@@ -15,10 +23,9 @@ export class ModeloService {
         }catch(e){
             alert(e)
         }
-        return JSON.parse(this.Modelo)
+        return this.Modelo
     }
-    
-    CriarObjetoPrincipal(quadro:IQuadro[]){
+    private CriarObjetoPrincipal(quadro:IQuadro[]){
         quadro.forEach((quadro_,index) => {   
             if(index == 0)
             this.CriarChaveValor(quadro_.campo)
@@ -26,8 +33,7 @@ export class ModeloService {
                 this.CriarIdentificador(quadro_)
         }); 
     }
-
-    CriarChaveValor(campo:ICampo[]){
+    private CriarChaveValor(campo:ICampo[]){
         campo.forEach((c,index) => {
             if (typeof c.value === "string")
                 this.PreparaChaveValorParaString(c)
@@ -37,18 +43,17 @@ export class ModeloService {
                 this.Modelo = this.Modelo.concat(',')
         })
     }
-
-    CriarIdentificador(quadro:IQuadro){
+    private CriarIdentificador(quadro:IQuadro){
         if (quadro.Identificador)
             this.Modelo = this.Modelo.concat(',',"\"",quadro.Identificador,"\"",':', '{')
             this.CriarChaveValor(quadro.campo)
             this.Modelo = this.Modelo.concat('}')
             console.log(this.Modelo)
     }
-    PreparaChaveValorParaString(c:ICampo){
+    private PreparaChaveValorParaString(c:ICampo){
         this.Modelo = this.Modelo.concat("\"",c.chave,"\"",':',"\"",c.value,"\"")
     }
-    PreparaChaveValorParaNumero(c:ICampo){
+    private PreparaChaveValorParaNumero(c:ICampo){
         this.Modelo = this.Modelo.concat("\"",c.chave,"\"",":",c.value)
     }
 }

@@ -16,16 +16,18 @@ export interface IBotoes{
   codigo:string,
   name:string,
   evento:string,
-  icon:string
+  icon:string,
+  tipoBotao:TipoBotao,
+  descricao?:string
 }
 export interface ICampo{
   id:string,
   descricao:string,
   type:string,
   maxlength:number,
-  max:36,
-  min:36,
-  required:1,
+  max:number,
+  min:number,
+  required:boolean|0|1,
   Acessibilidade:1,
   RegraNecogio:string,
   chave:string,
@@ -33,7 +35,8 @@ export interface ICampo{
   inJson:boolean
 }
 
-enum TipoBotao{
-  crud = "crud" ,
-  especifico = "especifico"
+export enum TipoBotao{
+  crud = "crud",
+  especifico = "especifico",
+  apoioJanela = "apoioJanela"
 }

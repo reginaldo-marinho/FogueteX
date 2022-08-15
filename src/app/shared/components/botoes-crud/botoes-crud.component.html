@@ -1,6 +1,6 @@
 <div class="action-defaut">
-      <div *ngFor="let itemButton of Botoes.crud">
-            <button class="btn-crud"  [id]="itemButton.codigo" [buttonQuadroDiretive]="itemButton" >
+      <div *ngFor="let itemButton of Botoes">
+            <button class="btn-crud"  [id]="itemButton.codigo" [buttonQuadroDiretive]="itemButton" [title]="itemButton.descricao">
                   <span  [class]="itemButton.icon"></span>
             </button>
       </div>
