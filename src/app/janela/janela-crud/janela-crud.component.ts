@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { AfterViewChecked, Component, OnInit } from "@angular/core";
 import { JanelaService } from "src/app/core/services/janela.service";
 import { ModeloService } from "src/app/core/services/modelo.service";
 import { IJanela, IQuadro } from "../janela";
@@ -8,13 +8,14 @@ import { IJanela, IQuadro } from "../janela";
   providers: [JanelaService],
 })
 export class JanelaCrudComponent implements OnInit {
-  constructor(private JS: JanelaService, private model: ModeloService) {}
+  constructor(private JS: JanelaService, private model: ModeloService) {
+    window.addEventListener("load", () => this.JS.FactoryServices());
+  }
 
   ngOnInit() {
     this.EstruturaJanela_ = this.JS.Janela;
     this.PreparaModelo();
   }
-
   EstruturaJanela_!: IJanela;
   Modelo!: JSON;
   PreparaModelo() {

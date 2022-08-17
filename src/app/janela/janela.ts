@@ -13,7 +13,7 @@ export interface IQuadro {
 }
 
 export interface IBotoes {
-  codigo: string;
+  id: string;
   name: string;
   evento: string;
   icon: string;

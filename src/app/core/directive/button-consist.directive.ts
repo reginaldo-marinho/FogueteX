@@ -15,5 +15,7 @@ export class ButtonQuadroDiretive {
   @Input("buttonQuadroDiretive") set state(campo: any) {
     //document.getElementById(campo.id)?.addEventListener('click',)
   }
-  @HostListener("click", ["$event.currenttarget"]) Click(e: Event) {}
+  @HostListener("click", ["$event.currenttarget"]) Click(e: any) {
+    //  this.janela.BotaoSetEvent(null);
+  }
 }

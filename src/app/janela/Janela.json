@@ -4,15 +4,15 @@
     "descricao": "Janela",
     "buttons": [
       {
-        "codigo": "b1579ce10830",
+        "id": "6daae3d9-adeb-45d7-ba48-36da571ba1ce",
         "name": "new",
         "evento": "new",
         "icon": "bi bi-plus-lg",
-        "tipoBotao": "janela",
+        "tipoBotao": "apoioJanela",
         "descricao": "novo"
       },
       {
-        "codigo": "b1579ceddd30",
+        "id": "0323fa55-6189-4d46-a2f8-6409a5f5daf9",
         "name": "save",
         "evento": "save",
         "icon": "bi bi-save",
@@ -20,7 +20,7 @@
         "descricao": "salvar"
       },
       {
-        "codigo": "b1sssse10830",
+        "id": "e536646b-05f7-479a-8e38-64d66a228c31",
         "name": "alter",
         "evento": "alter",
         "icon": "bi bi-wrench",
@@ -28,7 +28,7 @@
         "descricao": "Alterar"
       },
       {
-        "codigo": "bgecsse10830",
+        "id": "b5b7738f-4151-4dc9-99d5-8975003c9841",
         "name": "delete",
         "evento": "delete",
         "icon": "bi bi-trash3",
@@ -36,15 +36,15 @@
         "descricao": "excluir"
       },
       {
-        "codigo": "ffffxsddcdvvd",
+        "id": "1e6da096-8ce4-4ed1-8559-ae416ebbe783",
         "name": "cancel",
         "evento": "cancel",
         "icon": "bi bi-x-lg",
-        "tipoBotao": "janela",
+        "tipoBotao": "apoioJanela",
         "descricao": "cancelar"
       },
       {
-        "codigo": "uuygugutgtgt",
+        "id": "cb92d6c5-7b39-443f-b013-f0bba147afab",
         "name": "json",
         "evento": "im   portJson",
         "icon": "bi bi-filetype-json",
