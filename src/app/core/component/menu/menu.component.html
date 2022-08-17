@@ -1,30 +1,40 @@
 <div class="menu">
-      <app-nav-bar></app-nav-bar>
-      <div class="menu-box">
-            <div class="menu-vertical">
-                  <div *ngFor="let modulo of MenuVericalModulos; let i = index"> 
-                        <div class="menu-v-modulo" id="{{modulo.id}}">
-                              <span class="menu-v-modulo-icon">
-                                    <i [class]="modulo.classIcone"></i>
-                              </span>
-                              <span class="menu-v-modulo-name">
-                                    <span>{{modulo.nome}}</span>
-                              </span>
-                        </div>
-                  </div>
-            </div>
-            <div class="conteiner-menu-grupo" >
-                  <div class="menu-grupo" *ngFor="let Grupoitem of this.MenuGrupos" >
-                        <h5>{{Grupoitem.nome}}</h5>
-                        <div class="menu-grupo-sub-menu">
-                              <div *ngFor="let Submenu of Grupoitem.subMenu" style="margin-left:10px;" class="sub-menu-item">
-                                    <h6>{{Submenu.nome}}</h6>
-                                     <div *ngFor="let item of Submenu.pontoEntrada" style="margin-left:10px;">
-                                           <a [href]="item.url" class="sub-menu-item-end-point">{{item.nome}}</a> <i [ngClass]="GetStar(item.favorito)" ></i>
-                                     </div>
-                               </div>
-                        </div>
-                  </div>
-            </div>
+  <app-nav-bar></app-nav-bar>
+  <div class="menu-box">
+    <div class="menu-vertical">
+      <div *ngFor="let modulo of MenuVericalModulos; let i = index">
+        <div class="menu-v-modulo" id="{{ modulo.id }}">
+          <span class="menu-v-modulo-icon">
+            <i [class]="modulo.classIcone"></i>
+          </span>
+          <span class="menu-v-modulo-name">
+            <span>{{ modulo.nome }}</span>
+          </span>
+        </div>
       </div>
+    </div>
+    <div class="conteiner-menu-grupo">
+      <div class="menu-grupo" *ngFor="let Grupoitem of this.MenuGrupos">
+        <h5>{{ Grupoitem.nome }}</h5>
+        <div class="menu-grupo-sub-menu">
+          <div
+            *ngFor="let Submenu of Grupoitem.subMenu"
+            style="margin-left: 10px"
+            class="sub-menu-item"
+          >
+            <h6>{{ Submenu.nome }}</h6>
+            <div
+              *ngFor="let item of Submenu.pontoEntrada"
+              style="margin-left: 10px"
+            >
+              <a [href]="item.url" class="sub-menu-item-end-point">{{
+                item.nome
+              }}</a>
+              <i [ngClass]="GetStar(item.favorito)"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

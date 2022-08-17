@@ -1,14 +1,13 @@
-
 <app-nav-bar></app-nav-bar>
 <div class="janela">
-      <div class="janela-grid">
-            <janela-left-list></janela-left-list>
-      </div>
-      <div class="janela-base">
-            <h5 class="janela-titulo">{{EstruturaJanela_.descricao}}</h5>
-            <janela-quadro [Quadro]="EstruturaJanela_.quadro"></janela-quadro>
-      </div>
-      <div class="conteiner-action">
-            <botoes-crud [Botoes]="EstruturaJanela_.buttons"></botoes-crud>
-      </div>
+  <div class="janela-grid">
+    <janela-left-list></janela-left-list>
+  </div>
+  <div class="janela-base">
+    <h5 class="janela-titulo">{{ EstruturaJanela_.descricao }}</h5>
+    <janela-quadro [Quadro]="EstruturaJanela_.quadro"></janela-quadro>
+  </div>
+  <div class="conteiner-action">
+    <botoes-crud [Botoes]="EstruturaJanela_.buttons"></botoes-crud>
+  </div>
 </div>

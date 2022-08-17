@@ -1,162 +1,161 @@
 {
-	"root":{
-	   "modulo":[
-		{
-			"nome":"Construção",
-			"id":"b0b07f33-ddw3-4518-af56-90dfa81d6f14",
-			"classIcone":"bi bi bi-building",
-			"grupoMenu":[
-			   {
-				   "nome":"API's",
-				   "subMenu":[
-					{
-					   "nome":"API's",
-					   "pontoEntrada":[
-						{
-						   "nome":"API's",
-						   "url":"./AdministracaoLoginPermissoes",
-						   "favorito":null
-						}
-					   ]
-					}
-				   ]
-				}
-			]
-		   },
-		{
-		   "nome":"Administracao",
-		   "id":"b0b07f33-37b3-4518-af56-90dfa81d6f14",
-		   "classIcone":"bi bi-cone-striped",
-		   "grupoMenu":[
-			{
-				"nome":"Menu",
-				"subMenu":[
-				   {
-					"nome":"Modulo",
-					"pontoEntrada":[
-					   {
-						"nome":"Modulos",
-						"url":"./AdministracaoLoginPermissoes",
-						"favorito":0
-					   },
-					   {
-						"nome":"Pontos de Entrada",
-						"url":"./AdministracaoLoginPermissoes",
-						"favorito":0
-					   }
-					]
-				   }
-				]
-			   },
-			{
-			   "nome":"Usuarios",
-			   "subMenu":[
-				{
-				   "nome":"Login",
-				   "pontoEntrada":[
-					{
-					   "nome":"usuarios",
-					   "url":"./AdministracaoLoginPermissoes",
-					   "favorito":0
-					},
-					{
-					   "nome":"Permissôes",
-					   "url":"./AdministracaoLoginPermissoes",
-					   "favorito":0
-					},
-					{
-					   "nome":"Identificação",
-					   "url":"./AdministracaoLoginPermissoes",
-					   "favorito":1
-					}
-				   ]
-				}
-			   ]
-			}
-		   ]
-		},
-		{
-		   "nome":"Vendas",
-		   "id":"283cada7-1ad7-4958-a88c-d8dbb5ee3f58",
-		   "classIcone":"bi bi-cash-coin",
-		   "grupoMenu":[
-			{
-			   "nome":"Ordens de Serviços",
-			   "subMenu":[
-				{
-				   "nome":"Venda",
-				   "pontoEntrada":[
-					{
-					   "nome":"Ordem de Serviço",
-					   "url":"./VendasPreVendasCotacao"
-					}
-				   ]
-				},
-				{
-				   "nome":"Pré Venda",
-				   "pontoEntrada":[
-					{
-					   "nome":"Cotação",
-					   "url":"./VendasPreVendasCotacao"
-					},
-					{
-						"nome":"Cotação",
-						"url":"./VendasPreVendasCotacao"
-					   },
-					   {
-						"nome":"Cotação",
-						"url":"./VendasPreVendasCotacao"
-					   }
-					
-				   ]
-				}
-			   ]
-			}
-		   ]
-		},
-		{
-		   "nome":"Base",
-		   "id":"085c14bb-64db-4de5-899b-1bd5d36ac0d4",
-		   "classIcone":"bi bi-person-circle",
-		   "grupoMenu":[
-			{
-			   "nome":"Estoque",
-			   "subMenu":[
-				{
-				   "nome":"Estoque",
-				   "pontoEntrada":[
-					{
-					   "nome":"Unidades de Medidas",
-					   "url":"./EstoqueEstoqueUnidadeMedida"
-					},
-					{
-					   "nome":"Categorias",
-					   "url":"./EstoqueEstoqueUnidadeMedida"
-					},
-					{
-					   "nome":"Produtos",
-					   "url":"./EstoqueEstoqueUnidadeMedida"
-					}
-				   ]
-				}
-			   ]
-			},
-			{
-			   "nome":"Venda",
-			   "subMenu":[
-				{
-				   "nome":"venda",
-				   "pontoEntrada":[
-					{
-					   "nome":"Cliente",
-					   "url":"./EstoqueEstoqueUnidadeMedida"
-					}
-				   ]
-				}
-			   ]
-			}
-		   ]
-		}
-	   ]
-	}
-   }
+  "root": {
+    "modulo": [
+      {
+        "nome": "Construção",
+        "id": "b0b07f33-ddw3-4518-af56-90dfa81d6f14",
+        "classIcone": "bi bi bi-building",
+        "grupoMenu": [
+          {
+            "nome": "API's",
+            "subMenu": [
+              {
+                "nome": "API's",
+                "pontoEntrada": [
+                  {
+                    "nome": "API's",
+                    "url": "./AdministracaoLoginPermissoes",
+                    "favorito": null
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nome": "Administracao",
+        "id": "b0b07f33-37b3-4518-af56-90dfa81d6f14",
+        "classIcone": "bi bi-cone-striped",
+        "grupoMenu": [
+          {
+            "nome": "Menu",
+            "subMenu": [
+              {
+                "nome": "Modulo",
+                "pontoEntrada": [
+                  {
+                    "nome": "Modulos",
+                    "url": "./AdministracaoLoginPermissoes",
+                    "favorito": 0
+                  },
+                  {
+                    "nome": "Pontos de Entrada",
+                    "url": "./AdministracaoLoginPermissoes",
+                    "favorito": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nome": "Usuarios",
+            "subMenu": [
+              {
+                "nome": "Login",
+                "pontoEntrada": [
+                  {
+                    "nome": "usuarios",
+                    "url": "./AdministracaoLoginPermissoes",
+                    "favorito": 0
+                  },
+                  {
+                    "nome": "Permissôes",
+                    "url": "./AdministracaoLoginPermissoes",
+                    "favorito": 0
+                  },
+                  {
+                    "nome": "Identificação",
+                    "url": "./AdministracaoLoginPermissoes",
+                    "favorito": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nome": "Vendas",
+        "id": "283cada7-1ad7-4958-a88c-d8dbb5ee3f58",
+        "classIcone": "bi bi-cash-coin",
+        "grupoMenu": [
+          {
+            "nome": "Ordens de Serviços",
+            "subMenu": [
+              {
+                "nome": "Venda",
+                "pontoEntrada": [
+                  {
+                    "nome": "Ordem de Serviço",
+                    "url": "./VendasPreVendasCotacao"
+                  }
+                ]
+              },
+              {
+                "nome": "Pré Venda",
+                "pontoEntrada": [
+                  {
+                    "nome": "Cotação",
+                    "url": "./VendasPreVendasCotacao"
+                  },
+                  {
+                    "nome": "Cotação",
+                    "url": "./VendasPreVendasCotacao"
+                  },
+                  {
+                    "nome": "Cotação",
+                    "url": "./VendasPreVendasCotacao"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nome": "Base",
+        "id": "085c14bb-64db-4de5-899b-1bd5d36ac0d4",
+        "classIcone": "bi bi-person-circle",
+        "grupoMenu": [
+          {
+            "nome": "Estoque",
+            "subMenu": [
+              {
+                "nome": "Estoque",
+                "pontoEntrada": [
+                  {
+                    "nome": "Unidades de Medidas",
+                    "url": "./EstoqueEstoqueUnidadeMedida"
+                  },
+                  {
+                    "nome": "Categorias",
+                    "url": "./EstoqueEstoqueUnidadeMedida"
+                  },
+                  {
+                    "nome": "Produtos",
+                    "url": "./EstoqueEstoqueUnidadeMedida"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nome": "Venda",
+            "subMenu": [
+              {
+                "nome": "venda",
+                "pontoEntrada": [
+                  {
+                    "nome": "Cliente",
+                    "url": "./EstoqueEstoqueUnidadeMedida"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

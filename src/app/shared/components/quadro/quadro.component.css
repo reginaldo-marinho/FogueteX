@@ -1,7 +1,8 @@
-.janela-titulo,.janela-quadro{
-      margin-top: 10px;
-      margin-left: 10px;
+.janela-titulo,
+.janela-quadro {
+  margin-top: 10px;
+  margin-left: 10px;
 }
-.janela-quadro{
-      width: auto;
+.janela-quadro {
+  width: auto;
 }
