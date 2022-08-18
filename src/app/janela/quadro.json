@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Identificação",
+    "type": "block",
+    "id": "46d66c9d-c830-4c0b-90d7-ea7a6d0cfde9",
+    "Identificador": "JanelaHeader",
+    "fk": "",
+    "campo": [
+      {
+        "id": "00915b10-e991-4164-8932-57c9aadca2e1",
+        "descricao": "código",
+        "type": "text",
+        "maxlength": 36,
+        "max": 0,
+        "min": 0,
+        "required": 1,
+        "Acessibilidade": 1,
+        "chave": "codigo",
+        "value": 4555,
+        "inJson": "true"
+      },
+      {
+        "id": "7ec2b914-8a62-4296-bf59-023406111441",
+        "descricao": "Nome",
+        "type": "text",
+        "maxlength": 15,
+        "max": 0,
+        "min": 0,
+        "required": 1,
+        "Acessibilidade": 1,
+        "chave": "nome",
+        "value": "Pontos de entradas",
+        "inJson": "true"
+      },
+      {
+        "id": "20280273-df01-4205-a454-419c8e89cfd0",
+        "descricao": "Descricao",
+        "type": "text",
+        "maxlength": 50,
+        "max": 0,
+        "min": 0,
+        "required": 1,
+        "Acessibilidade": 1,
+        "chave": "unidade",
+        "value": "Pontos de entradas API's",
+        "inJson": "true"
+      }
+    ]
+  },
+  {
+    "name": "Header",
+    "type": "block",
+    "id": "kjkwjvjkvwvjwvbw",
+    "Identificador": "JanelaDetail",
+    "fk": "",
+    "campo": [
+      {
+        "id": "7ec2b914-8a62-4296-bf59-0ddd06111441",
+        "descricao": "código",
+        "type": "text",
+        "maxlength": 36,
+        "max": 36,
+        "min": 36,
+        "required": 1,
+        "Acessibilidade": 1,
+        "chave": "unidade",
+        "value": "7ec2b914-8a62-4296-bf59-023406111441",
+        "inJson": "true"
+      },
+      {
+        "id": "20280273-df01-4205-a454-4ss9c8e89cfd0",
+        "descricao": "Descricao",
+        "type": "text",
+        "maxlength": 50,
+        "max": 0,
+        "min": 0,
+        "required": 1,
+        "Acessibilidade": 1,
+        "chave": "unidade",
+        "value": "API foguete X",
+        "inJson": "true"
+      },
+      {
+        "id": "20280273-df01-4205-a454-4swe8e89cfd0",
+        "descricao": "Ambiente",
+        "type": "text",
+        "maxlength": 15,
+        "max": 0,
+        "min": 0,
+        "required": 1,
+        "Acessibilidade": 1,
+        "chave": "",
+        "value": "Desenvolvimento",
+        "inJson": "true"
+      },
+      {
+        "id": "20280273-df01-oo05-a454-4swe8e89cfd0",
+        "descricao": "Ponto de Entrada",
+        "type": "text",
+        "maxlength": 25,
+        "max": 0,
+        "min": 0,
+        "required": 1,
+        "Acessibilidade": 1,
+        "chave": "",
+        "value": "http://localhost:4200/",
+        "inJson": "true"
+      }
+    ]
+  },
+  {
+    "name": "parcelas",
+    "type": "block-line",
+    "id": "ff010263-17a3-41a4-a608-810abb117183",
+    "Identificador": "Parcelas",
+    "fk": "46d66c9d-c830-4c0b-90d7-ea7a6d0cfde9",
+    "campo": [
+      {
+        "id": "b043b3d1-d226-4ac7-8f93-1b85ba765d76",
+        "descricao": "código",
+        "type": "text",
+        "maxlength": 36,
+        "max": 36,
+        "min": 36,
+        "required": 1,
+        "Acessibilidade": 1,
+        "chave": "unidade",
+        "value": "scsckcsnkcsnckcs",
+        "inJson": "true"
+      },
+      {
+        "id": "dda7ce08-cf0d-43f5-b756-d4ea9e79c23e",
+        "descricao": "Descricao",
+        "type": "text",
+        "maxlength": 50,
+        "max": 0,
+        "min": 0,
+        "required": 1,
+        "Acessibilidade": 1,
+        "chave": "unidade",
+        "value": "API foguete X",
+        "inJson": "true"
+      }
+    ]
+  }
+]
