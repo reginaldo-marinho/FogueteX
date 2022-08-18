@@ -5,15 +5,25 @@ import { ICampo, IJanela, IQuadro } from "src/app/janela/janela";
 export class ModeloService {
   constructor() {}
 
-  private Modelo!: string;
+  private Modelo!: string; /* Receberá um modelo em strutura JSON */
+  private NovoModelo!: string; /* Usado quando um novo modelo está prester a ser criado - Aqui o modelo não terá valor nas suas propriedades*/
 
+  get GetNovoModelo(): JSON {
+    return JSON.parse(this.NovoModelo);
+  }
+
+  /* A setter. */
   set Setmodelo(Janela: IJanela) {
     this.Modelo = this.PreparaModelo(Janela);
   }
   get GetModelo(): JSON {
     return JSON.parse(this.Modelo);
   }
-
+  /**
+   * It creates a model JSON object from a given window
+   * @param {IJanela} Janela - IJanela
+   * @returns The model is being returned.
+   **/
   private PreparaModelo(Janela: IJanela): string {
     this.Modelo = "";
     try {
@@ -49,7 +59,6 @@ export class ModeloService {
       );
     this.CriarChaveValor(quadro.campo);
     this.Modelo = this.Modelo.concat("}");
-    console.log(this.Modelo);
   }
   private PreparaChaveValorParaString(c: ICampo) {
     this.Modelo = this.Modelo.concat('"', c.chave, '"', ":", '"', c.value, '"');
