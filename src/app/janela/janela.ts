@@ -9,6 +9,7 @@ export interface IQuadro {
   type: string;
   id: string;
   Identificador: string;
+  fk: string;
   campo: ICampo[];
 }
 
